@@ -1,0 +1,23 @@
+﻿<div class="col-md-8">
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <td class="col-md-4"></td>
+                <td class="col-md-4"></td>
+                <td class="col-md-2"></td>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr ng-repeat="user in contacts">
+
+                <td class="col-sm-4">{{user.name}}</td>
+                <td class="col-sm-4">{{user.email}}</td>
+                <td class="col-md-2">
+                    <button type="button" ng-click="deleteContact(user.id)">
+                        Remove
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
